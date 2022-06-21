@@ -1,0 +1,8 @@
+FROM golang:latest
+WORKDIR /go/LM_system
+COPY . /go/LM_system
+RUN go env -w GO111MODULE=on
+RUN go env -w GOPROXY=https://goproxy.cn,direct
+EXPOSE 8080
+EXPOSE 10001
+CMD go run main.go

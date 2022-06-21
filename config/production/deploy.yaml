@@ -1,0 +1,11 @@
+host: 127.0.0.1
+user: wangkun
+password: 123abc 
+rsa_key: 
+timeout: 1000
+remote_path: "/home/wangkun/"
+post_shell: 
+  - "./ginx serve restart"
+  - "pwd"
+goos: linux
+goarch: amd64
